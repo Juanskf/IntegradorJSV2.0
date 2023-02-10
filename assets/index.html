@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+    <title>Muebles Juampy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+    </style>
+</head>
+
+<main class="container">
+    <!-- HEADER -->
+    <header class="content_container">
+        <div class="header_content">
+            <div class="logo_container">
+                <img src="assets/img/logo.png" alt="" />
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li id="icon-home">
+                        <i class="fa-solid fa-house"></i>
+                        <p><a href="#hero">home</a></p>
+                    </li>
+                    <li id="icon-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p><a>Compras</a></p></li>
+                    <li id="icon-user">
+                        <i class="fa-solid fa-user"></i>
+                        <p><a href="./assets/Entrar.html">Login</a></p>
+                    </li>
+                </ul>
+            </div>
+
+                          
+            <div class="hamburger">
+                
+                <div class="_layer -top"></div>
+                <div class="_layer -mid"></div>
+                <div class="_layer -bottom"></div>
+                <nav class="menuppal">
+                    <ul>
+                        <li id="icon-home">
+                            <i class="fa-solid fa-house"></i>
+                            <p><a href="#hero">Home</a></p>
+                        </li>
+                        <li id="icon-user">
+                            <i class="fa-solid fa-user"></i>
+                            <p><a href="./assets/Entrar.html">Login</a></p>
+                        </li>
+                        <li id="icon-cart-2">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <p><a>Compras</a></p>
+                            </li>
+                    </ul>
+           </nav>
+                </nav>
+            </div>
+            </div>
+        </header>
+        <div id="overlay"></div>
+
+       <!-- CARRITO -->
+       <div id="cartList" class="none">
+        <div class="content_btn_check">
+            <button class="check-out">x</button>
+        </div>
+        <h2>Tus Productos</h2>
+        <div class="content_cart_products">
+            <!-- <div class="cart_products">
+                    <div class="product_img">
+                        <img src=${img} alt=${name} />
+                    </div>
+                    <div class="product_text">
+                      <p class="product_name">${name}</p>
+                      <p class="opacity">${descr}</p>
+                      <p class="product_price">$ ${price}</p>
+                    </div>
+                    <div class="product_button">
+                      <button class="minus">
+                        <p class="down" data-id=${id}>-</p>
+                      </button>
+                        <p class="quantity">${quantity}</p>
+                      <button>
+                        <p class="up" data-id=${id}>+</p>
+                      </button>
+                    </div>
+                </div> -->
+        </div>
+        <div class="total_price_content">
+            <div class="subT">
+                <h4>Total:</h4>
+                <h4 id="total">$ 0</h4>
+            </div>
+        </div>
+        <div class="btn_cart_buy">
+            <button class="buy_btn">COMPRAR</button>
+            <p class="opacity" id="viewMore">Ver más productos</p>
+        </div>
+    </div>
+
+        <!-- HERO -->
+        <section class="content_container">
+            <div class="hero" id="hero">
+                <div class="text_hero">
+                    <div class="content_title">
+                        <h1 class="title">Productos de Carpinteria</h1>
+                    </div>
+                    <div class="content_text_title">
+                        <h2></h2>
+                        <p class="text_one">
+                            La carpintería es el oficio de trabajar la madera para crear objetos útiles y agradables al ser humano. Los productos suelen ser muebles como mesas, elementos de construcción como puertas, herramientas como martillos y otros. El trabajo sobre la madera incluye principalmente cortar, esculpir, pulir, unir, impermeabilizar ​y otros.
+                        </p>
+                    </div>
+                    <div class="content_btn" >
+                        <button class="btn_title"><p><a href="#categorias">Ver Mas</a></p></button>
+                    </div>
+                </div>
+                <div class="img_hero">
+                    <img class="img_one" id="imgOne" src="./assets/img/mix.png" alt="" />
+                </div>
+            </div>
+        </section>
+        
+            
+<!-- Slideshow container --> 
+<div class="content_container">
+    <div class="content_text_slider">
+<div class="slideshow-container">
+      <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="./assets/img/cama2.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="./assets/img/futon4.png" style="width:100%">
+    
+      <div class="text"></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="./assets/img/silla4.png" style="width:88%">
+      <div class="text"></div>
+    </div>
+    
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+    </div>
+</div>
+</div>
+              <!-- <section class="content_container">
+            <div class="recommend">
+                <div class="content_recommend">
+                    <p class="text_one p_reco">Oferta en Stock</p>
+                    <div class="cards_reco">
+                        <div class="card hov">
+                            <div class="img_card img_popular">
+                                <img src="./assets/img/futon3.png" alt="" />
+                            </div>
+                            <div class="texts_card">
+                                <p class="text_two">Sillon</p>
+                                <p class="opacity">Chenille</p>
+                                <p class="price_card">$ 8700</p>
+                            </div>
+                            <div class="btn">
+                                <button class="btn_add" id="btn_add"
+                                data-id="${id}"
+                                data-name="${name}"
+                                data-price="${price}"
+                                data-img="${img}">Agregar</button>
+                            </div>
+                        </div>
+                        <div class="card hov">
+                            <div class="img_card img_popular">
+                                <img src="./assets/img/cama.png" alt="" />
+                            </div>
+                            <div class="texts_card">
+                                <p class="text_two">Cama 2P</p>
+                                <p class="opacity">Macizo</p>
+                                <p class="price_card">$ 7984</p>
+                            </div>
+                            <div class="btn">
+                                <button class="btn_add">Agregar</button>
+                            </div>
+                        </div>
+                        <div class="card hov">
+                            <div class="img_card img_popular">
+                                <img src="./assets/img/silla4.png" alt="" />
+                            </div>
+                            <div class="texts_card">
+                                <p class="text_two">Silla</p>
+                                <p class="opacity">Eco Cuero</p>
+                                <p class="price_card">$ 3890</p>
+                            </div>
+                            <div class="btn">
+                                <button class="btn_add">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- CATEGORIAS -->
+        <section class="content_container">
+                <div class="categories" id="categorias">
+                <p class="cat_title" id="categorias">Categorias</p>
+                <div class="category">
+                    <div class="container_categories">
+                        <div class="card_category hov" data-category="popular">
+                            <div class="content_img_card img_popular">
+                                <img src="./assets/img/mix.png" alt="" />
+                            </div>
+                            <p class="text_two">Populares</p>
+                        </div>
+
+                        <div class="card_category hov" data-category="mesas">
+                            <div class="content_img_card img_popular">
+                                <img src="./assets/img/mesita2.png" alt="" />
+                            </div>
+                            <p class="text_two">Mesas</p>
+                            </div>
+
+                        <div class="card_category hov" data-category="camas">
+                            <div class="content_img_card img_popular">
+                                <img src="./assets/img/cama4.png" alt="" />
+                            </div>
+                            <p class="text_two">Camas</p>
+                            </div>
+
+                        <div class="card_category hov" data-category="sillas">
+                            <div class="content_img_card img_popular">
+                                <img src="./assets/img/silla2.png" alt="" />
+                            </div>
+                            <p class="text_two">Sillas</p>
+                            </div>
+
+                        <div class="card_category hov" data-category="roperos">
+                            <div class="content_img_card img_popular">
+                                <img src="./assets/img/ropero.png" alt="" />
+                            </div>
+                            <p class="text_two">Roperos</p>
+                            </div>
+
+                        <div class="card_category hov" data-category="futon">
+                            <div class="content_img_card img_popular">
+                                <img src="./assets/img/futon.png" alt="" />
+                            </div>
+                            <p class="text_two">Futones</p>
+                            </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS -->
+        <section class="content_container">
+            <div class="sec_populares">
+                <div class="populares">
+                    <p class="text_one p_reco"></p>
+                    <div class="container_populares" id="product">
+                        <div class="card-populares hov" id="product">
+                                <div class="img_popular">
+                                    <img src=${img} alt=${name}>
+                                </div>
+                                <div class="content_text_cards">
+                                  <div class="text-populares">
+                                      <p class="text_two">${name}</p>
+                                      <p class="opacity">${descr}</p>
+                                      <p class="price_card">$ ${price}</p>
+                                
+                                  </div>
+                                  <div class="btn">
+                                      <button class="btn_add" id="btn_add"
+                                      data-id="${id}"
+                                      data-name="${name}"
+                                      data-price="${price}"
+                                      data-img="${img}">Agregar</button>
+                                  </div>
+                                </div>
+                             </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+<!-- Contactanos  -->  
+
+    </section>
+</div>
+<footer>
+  <div class="content">
+    <div class="left box">
+      <div class="upper">
+        <div class="topic">Sobre nosotros</div>
+        <p>Somos una fabrica familiar con 10 años de experiencia en el rubro de la madera</p>
+      </div>
+      <div class="lower">
+        <div class="topic">Contactanos</div>
+        <div class="phone">
+          <a href="#"><i class="fas fa-phone-volume"></i>+5411111132</a>
+        </div>
+        <div class="email">
+          <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="middle box">
+      <div class="topic">Otros Servicios</div>
+      <div><a href="#">Reparacion</a></div>
+      <div><a href="#">Lustrado</a></div>
+      <div><a href="#">Encerado</a></div>
+      <div><a href="#">Fabricacion</a></div>
+      <div><a href="#">Envios</a></div>
+      <div><a href="#">Y mucho mas</a></div>
+    </div>
+    <div class="right box">
+      <div class="topic">Suscribite</div>
+      <form action="#">
+        <input type="text" placeholder="Ingresar Email">
+        <input type="submit" name="" value="Enviar">
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="bottom">
+    <p>Copyright © 2022 <a href="#">Muebles Juampy</a> All rights reserved</p>
+  </div>
+</footer>
+
+</body>
+</html>
+
+        <div class="modal"></div>
+
+        <!-- FIN LANDING -->
+    </main>
+
+    <script src="./assets/data.js"></script>
+    <script src="./assets/main.js"></script>
+    <script src="./assets/slider.js"></script>
+    </body>
+
+</html>
